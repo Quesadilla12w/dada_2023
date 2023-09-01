@@ -1,0 +1,19 @@
+
+function    findMinor(Array) {
+    if (Array.length === 0) {
+        return null; 
+    } else {
+        let Minor = Array[0]; 
+        for (let i = 1; i < Array.length; i++) {
+            if (Array[i] < Minor) {
+                Minor = Array[i]; 
+            }
+        }
+        return Minor;
+    }
+}
+
+
+const array1 = [5, 2, 9, 0, 7,2,4,5,6,8,10,11,12,13];
+const minor1 = findMinor(Array1);
+console.log("El menor valor encontrado en el arreglo es:", Minor1);
