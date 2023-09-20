@@ -1,7 +1,7 @@
 function CalcularPi(iteraciones) {
     let pi = 0;
     for (let i = 0; i < iteraciones; i++) {
-      pi = (-1^i) / (2 * i + 1);
+      pi = (-1)^i / (2 * i + 1);
     }
     return 4 * pi;
   }
