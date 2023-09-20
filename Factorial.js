@@ -1,4 +1,7 @@
-function Factorial(numero) {   
+function Factorial(numero) {  
+  if (numero == 1 || numero == 0){
+    return 1
+  } 
   let resultado = 1; 
   for (let i = 1; i <= numero; i++) {
     resultado = resultado*i; 
