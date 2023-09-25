@@ -1,16 +1,13 @@
 function Fibonacci(n) {   
   if (n <= 2){
     return 1
-  } else {
-  let fib = [0, 1];
-  for (let i = 2; i <= n; i++) {
-    fib[i] = fib[i - 1] + fib[i - 2];
-  }
-
-  return fib[n]
+  } else {  
+    pi = Fibonacci(n-1) + Fibonacci(n-2);
+  return pi
   }
 } 
 
 const n = 10;
 const fib1 = Fibonacci(n);
-console.log("El fibonacci es:", fib1);
+console.log("El fibonacci es:", fib1); 
+
